@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="froyo.examen1.formulas.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_trapecioFragment"
+            app:destination="@id/trapecioFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_dosCamposFragment"
+            app:destination="@id/dosCamposFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_unCampoFragment"
+            app:destination="@id/unCampoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dosCamposFragment"
+        android:name="froyo.examen1.formulas.DosCamposFragment"
+        android:label="fragment_dos_campos"
+        tools:layout="@layout/fragment_dos_campos" />
+    <fragment
+        android:id="@+id/unCampoFragment"
+        android:name="froyo.examen1.formulas.UnCampoFragment"
+        android:label="fragment_un_campo"
+        tools:layout="@layout/fragment_un_campo" />
+    <fragment
+        android:id="@+id/trapecioFragment"
+        android:name="froyo.examen1.formulas.TrapecioFragment"
+        android:label="fragment_trapecio"
+        tools:layout="@layout/fragment_trapecio" />
+</navigation>

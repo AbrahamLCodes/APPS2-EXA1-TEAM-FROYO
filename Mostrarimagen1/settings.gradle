@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Mostrar imagen 1"
